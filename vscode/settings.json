@@ -4,12 +4,13 @@
   "editor.fontFamily": "SFMono, Menlo, Monaco, monospace",
   "editor.formatOnSave": true,
   "editor.inlayHints.fontFamily": "SFMono, Menlo, Monaco, monospace",
+  "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "trailing",
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "files.insertFinalNewline": true,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.zoomLevel": 1,
   "workbench.colorTheme": "GitHub Light Default",
@@ -41,10 +42,11 @@
     "editor.defaultFormatter": "golang.go"
   },
   "go.formatTool": "goimports",
+  "go.toolsManagement.autoUpdate": true,
 
   // SQL
   "[sql]": {
-    "editor.defaultFormatter": "bradymholt.pgformatter",
+    "editor.defaultFormatter": "bradymholt.pgformatter"
   },
   "pgFormatter.keywordCase": "uppercase",
   "pgFormatter.functionCase": "lowercase",
@@ -56,16 +58,8 @@
   },
 
   // Ruby
-  "[ruby]": {
-    "editor.defaultFormatter": "rebornix.ruby"
-  },
-  "ruby.format": "standard",
+  "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
-  "ruby.lint": {
-    "standard": {
-      "useBundler": true
-    }
-  },
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
 
@@ -75,5 +69,5 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  }
 }
